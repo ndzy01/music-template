@@ -11,7 +11,7 @@ function generateUUID() {
 
 const musicDirPath = path.join(__dirname, './resource/music');
 // TODO 修改仓库名称
-const name = 'music01';
+const name = 'music1';
 
 let fileList = [];
 
