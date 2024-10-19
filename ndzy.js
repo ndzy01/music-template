@@ -59,7 +59,7 @@ const fun = async (audioFilePath, name) => {
 
 const musicDirPath = path.join(__dirname, './resource/music');
 // TODO 修改仓库名称
-const NAME = 'music1';
+const NAME = 'music-template';
 
 let fileList = [];
 
@@ -85,7 +85,7 @@ const readFiles = async (directory) => {
 
       fileList.push({
         url: `https://www.ndzy01.com/${NAME}/${path.relative(__dirname + '/resource/', filePath)}`,
-        sliceUrl: `https://www.ndzy01.com/${NAME}/resource/slice/${name}`,
+        sliceUrl: `https://www.ndzy01.com/${NAME}/slice/${name}`,
         sliceDuration: duration,
         name,
         id: generateUUID(),
