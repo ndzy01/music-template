@@ -20,7 +20,6 @@ jobs:
       - name: 更新数据
         run: |
           rm -rf ./resource/slice
-          npm i
           node ndzy.js
           git add .
           git commit -a -m "更新数据 $(date +"%D %T")"
